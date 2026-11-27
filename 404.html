@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Holding Mentors LLC</title>
+<style>body{font-family:system-ui,sans-serif;background:#0b1530;color:#f3f1ea;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center}a{color:#FFB547}</style>
+<script>
+(function(){
+ var R="https://www.redglobaldementores.org/es/";
+ var p=location.pathname.toLowerCase().replace(/\/+$/,"");
+ var map=[
+  [/^\/(elearning|plans-pricing|formacion|programa)/,R+"academia/elearning/"],
+  [/^\/miembroactivo/,R+"miembro-activo/"],
+  [/^\/(category|product-page|bookstore|marketplace|libros)/,R+"bookstore/"],
+  [/^\/(proximosencuentros|encuentros|agenda)/,R+"encuentros/agenda/"],
+  [/^\/(galeria|directorio|mentores)/,R+"directorio/"],
+  [/^\/(rgmplus|rgm-plus)/,R+"rgmplus/"],
+  [/^\/(autoridades|nuevagobernanza)/,R+"institucional/"]
+ ];
+ for(var i=0;i<map.length;i++) if(map[i][0].test(p)){location.replace(map[i][1]);return;}
+ if(p&&p!=="/404.html"){document.addEventListener("DOMContentLoaded",function(){});}
+})();
+</script></head>
+<body><div><h1>Holding Mentors LLC</h1><p>No encontramos esta página.</p>
+<p><a href="/">Ir al inicio</a> · <a href="https://www.redglobaldementores.org">Red Global de Mentores</a></p></div></body></html>
